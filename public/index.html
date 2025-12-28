@@ -5,163 +5,186 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Rakesh Vangari | Senior Full Stack Engineer</title>
-	<meta name="description" content="Portfolio of Rakesh Vangari - Full Stack Developer">
+	<meta name="description" content="Portfolio of Rakesh Vangari - Full Stack Developer specializing in Cloud Architecture, Full Stack Engineering, and DevOps Automation">
+	<meta name="theme-color" content="#0c0c0e">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="shortcut icon" href="img/favicon.png" />
 </head>
 
 <body>
+	<!-- Intro Animation Screen -->
+	<div class="intro-screen" id="intro-screen">
+		<div class="intro-content">
+			<div class="intro-avatar-wrapper">
+				<div class="intro-avatar-glow"></div>
+				<img src="img/profile.png" alt="Rakesh Vangari" class="intro-avatar">
+				<div class="wave-hand">👋</div>
+			</div>
+			<div class="intro-text">
+				<h1 class="intro-greeting">
+					<span class="greeting-word">Hi</span>
+					<span class="greeting-word">I'm</span>
+					<span class="greeting-name" id="typed-name"></span>
+					<span class="typed-cursor-intro">|</span>
+				</h1>
+			</div>
+		</div>
+	</div>
+
 	<!-- Navigation -->
-	<header class="top-header">
+	<header class="header">
 		<div class="container">
-			<nav class="nav-flex">
-				<a href="#" class="logo">Rakesh Vangari</a>
-				<ul class="nav-links">
-					<li><a href="#about" class="active">About</a></li>
-					<li><a href="#experiences">Experiences</a></li>
-					<li><a href="#skills">Skills</a></li>
-				</ul>
-				<button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
-					<i class="fa fa-adjust"></i>
-				</button>
+			<nav class="nav">
+				<a href="#" class="logo">RV</a>
+				<div class="nav-right">
+					<a href="#work" class="nav-link" data-section="work">Work</a>
+					<a href="#skills" class="nav-link" data-section="skills">Skills</a>
+					<button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+						<span id="theme-icon">🌙</span>
+					</button>
+				</div>
 			</nav>
 		</div>
 	</header>
 
-	<!-- Introduction -->
-	<section class="section intro" id="about">
-		<div class="container">
-			<div class="hero-grid">
-				<div class="hero-content">
-					<h2>Hello, I'm Rakesh.</h2>
-					<h1>Specializing in <br> <span id="typed"></span></h1>
-					<p class="hero-description">
-						I specialize in architecting scalable web applications and automated cloud infrastructure.
-						With deep expertise in the full stack—from React to Node.js and AWS—I transform complex
-						requirements into elegant, efficient software solutions.
-					</p>
-				</div>
-				<div class="avatar-wrapper">
-					<img src="img/ava.jpg" alt="Rakesh Vangari">
+	<main class="main-layout">
+		<!-- Left Side - Hero Section -->
+		<aside class="hero-sidebar" id="about">
+			<div class="hero-content">
+				<div class="hero-badge">Senior Full Stack Engineer</div>
+				<h1 class="hero-title">
+					<span class="typing-prefix-text">Building</span> <span class="typing-text"><span id="typed"></span></span>
+				</h1>
+				<p class="hero-description">
+					I transform complex business requirements into elegant, efficient software solutions.
+					Passionate about scalable applications and cloud infrastructure.
+				</p>
+				<div class="hero-links">
+					<a href="mailto:vnrakesh96@gmail.com" class="link-primary">Get in touch</a>
 				</div>
 			</div>
+		</aside>
+
+		<!-- Right Side - Scrollable Content -->
+		<div class="content-sidebar">
+
+			<!-- Work Experience -->
+			<section class="work" id="work">
+				<div class="section-header">
+					<h2 class="section-title">Experience</h2>
+				</div>
+				<div class="work-list">
+					<article class="work-item">
+						<a href="https://www.itconvergence.com/" target="_blank" rel="noopener noreferrer" class="work-link">
+							<div class="work-header">
+								<div class="work-company">
+									<img src="img/itc.jpg" alt="IT Convergence" class="work-logo">
+									<div>
+										<h3>IT Convergence</h3>
+										<span class="work-role">Senior Consultant</span>
+									</div>
+								</div>
+								<span class="work-date">2022 — Present</span>
+							</div>
+						</a>
+					</article>
+
+					<article class="work-item">
+						<a href="https://foyr.com/" target="_blank" rel="noopener noreferrer" class="work-link">
+							<div class="work-header">
+								<div class="work-company">
+									<img src="img/foyr.jpg" alt="Foyr" class="work-logo">
+									<div>
+										<h3>Foyr</h3>
+										<span class="work-role">Full Stack Developer</span>
+									</div>
+								</div>
+								<span class="work-date">2019 — 2022</span>
+							</div>
+						</a>
+					</article>
+
+					<article class="work-item">
+						<a href="https://way2online.com/" target="_blank" rel="noopener noreferrer" class="work-link">
+							<div class="work-header">
+								<div class="work-company">
+									<img src="img/wayonline.png" alt="Way2Online" class="work-logo">
+									<div>
+										<h3>Way2Online</h3>
+										<span class="work-role">Product Engineer</span>
+									</div>
+								</div>
+								<span class="work-date">2017 — 2019</span>
+							</div>
+						</a>
+					</article>
+				</div>
+			</section>
+
+			<!-- Skills -->
+			<section class="skills" id="skills">
+				<div class="section-header">
+					<h2 class="section-title">Skills</h2>
+				</div>
+				<div class="skills-list">
+					<div class="skill-group">
+						<h3 class="skill-category">Backend</h3>
+						<div class="skill-tags">
+							<span class="skill-tag">Node.js</span>
+							<span class="skill-tag">Java</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3 class="skill-category">Frontend</h3>
+						<div class="skill-tags">
+							<span class="skill-tag">React</span>
+							<span class="skill-tag">Angular</span>
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">TypeScript</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3 class="skill-category">Database</h3>
+						<div class="skill-tags">
+							<span class="skill-tag">MySQL</span>
+							<span class="skill-tag">MongoDB</span>
+							<span class="skill-tag">ElasticSearch</span>
+							<span class="skill-tag">Redis</span>
+						</div>
+					</div>
+					<div class="skill-group">
+						<h3 class="skill-category">Cloud</h3>
+						<div class="skill-tags">
+							<span class="skill-tag">AWS</span>
+							<span class="skill-tag">Azure</span>
+							<span class="skill-tag">DigitalOcean</span>
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
-	</section>
-
-	<!-- Work Experience -->
-	<section class="section" id="experiences">
-		<div class="container">
-			<h2 class="section-title">Professional Journey</h2>
-			<div class="experience-list">
-
-				<!-- Experience Item -->
-				<a href="https://www.itconvergence.com/" target="_blank" class="experience-card">
-					<div class="exp-logo-wrapper">
-						<img class="exp-logo" src="img/itc.jpg" alt="ITC Logo">
-					</div>
-					<div class="exp-details">
-						<h3 class="exp-company">IT Convergence</h3>
-						<div class="exp-role">Senior Consultant</div>
-					</div>
-					<div class="exp-date">Aug 2022 - Present</div>
-				</a>
-
-				<!-- Experience Item -->
-				<a href="https://foyr.com/" target="_blank" class="experience-card">
-					<div class="exp-logo-wrapper">
-						<img class="exp-logo" src="img/foyr.jpg" alt="Foyr Logo">
-					</div>
-					<div class="exp-details">
-						<h3 class="exp-company">Foyr</h3>
-						<div class="exp-role">Full Stack Developer</div>
-					</div>
-					<div class="exp-date">Nov 2019 - Aug 2022</div>
-				</a>
-
-				<!-- Experience Item -->
-				<a href="https://way2online.com/" target="_blank" class="experience-card">
-					<div class="exp-logo-wrapper">
-						<img class="exp-logo" src="img/wayonline.png" alt="Way2Online Logo">
-					</div>
-					<div class="exp-details">
-						<h3 class="exp-company">Way2Online</h3>
-						<div class="exp-role">Product Engineer</div>
-					</div>
-					<div class="exp-date">Dec 2017 - Nov 2019</div>
-				</a>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- Skills -->
-	<section class="section" id="skills">
-		<div class="container">
-			<h2 class="section-title">Technical Expertise</h2>
-			<div class="skills-grid">
-
-				<div class="skill-category">
-					<h3>Backend</h3>
-					<div class="tags">
-						<span class="tag">Node Js</span>
-						<span class="tag">Java</span>
-					</div>
-				</div>
-
-				<div class="skill-category">
-					<h3>Frontend</h3>
-					<div class="tags">
-						<span class="tag">HTML</span>
-						<span class="tag">CSS</span>
-						<span class="tag">Javascript</span>
-						<span class="tag">Angular</span>
-						<span class="tag">React Js</span>
-					</div>
-				</div>
-
-				<div class="skill-category">
-					<h3>Database</h3>
-					<div class="tags">
-						<span class="tag">MySQL</span>
-						<span class="tag">MongoDB</span>
-						<span class="tag">ElasticSearch</span>
-						<span class="tag">Redis</span>
-					</div>
-				</div>
-
-				<div class="skill-category">
-					<h3>Cloud</h3>
-					<div class="tags">
-						<span class="tag">AWS</span>
-						<span class="tag">Azure</span>
-						<span class="tag">DigitalOcean</span>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
+	</main>
 
 	<!-- Footer -->
-	<footer>
+	<footer class="footer">
 		<div class="container">
-			<div class="footer-flex">
-				<p>&copy; 2024 Rakesh Vangari</p>
+			<div class="footer-content">
+				<p>&copy; <span id="current-year">2024</span> Rakesh Vangari</p>
 				<div class="social-links">
-					<a href="mailto:vnrakesh96@gmail.com" target="_blank" title="Email">
+					<a href="mailto:vnrakesh96@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
 						<i class="fa fa-envelope"></i>
 					</a>
-					<a href="https://twitter.com/raakeshvn" target="_blank" title="Twitter">
+					<a href="https://twitter.com/raakeshvn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
 						<i class="fa fa-twitter"></i>
 					</a>
-					<a href="https://www.linkedin.com/in/rakesh-vn/" target="_blank" title="LinkedIn">
+					<a href="https://www.linkedin.com/in/rakesh-vn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
 						<i class="fa fa-linkedin"></i>
 					</a>
-					<a href="https://www.instagram.com/rakeshvn/" target="_blank" title="Instagram">
+					<a href="https://www.instagram.com/rakeshvn/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
 						<i class="fa fa-instagram"></i>
 					</a>
 				</div>
@@ -173,55 +196,233 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/typed.min.js"></script>
 	<script>
+		// Intro Screen Animation
+		document.addEventListener('DOMContentLoaded', () => {
+			const introScreen = document.getElementById('intro-screen');
+			const body = document.body;
+			const typedName = document.getElementById('typed-name');
+			const cursor = document.querySelector('.typed-cursor-intro');
+			const name = 'Rakesh Vangari';
+			
+			// Hide main content initially
+			body.style.overflow = 'hidden';
+			
+			// Show intro screen
+			setTimeout(() => {
+				introScreen.classList.add('active');
+			}, 100);
+			
+			// Animate greeting words
+			const greetingWords = document.querySelectorAll('.greeting-word');
+			greetingWords.forEach((word, index) => {
+				setTimeout(() => {
+					word.classList.add('show');
+				}, 800 + (index * 200));
+			});
+			
+			// Type out the name character by character
+			let charIndex = 0;
+			const typeName = () => {
+				if (charIndex < name.length) {
+					typedName.textContent += name[charIndex];
+					charIndex++;
+					setTimeout(typeName, 100); // Typing speed: 100ms per character
+				} else {
+					// Hide cursor after typing is complete
+					setTimeout(() => {
+						cursor.style.opacity = '0';
+					}, 500);
+				}
+			};
+			
+			// Start typing after "Hi I'm" appears
+			setTimeout(() => {
+				typedName.classList.add('show');
+				typeName();
+			}, 1400); // Start typing after "I'm" appears
+			
+			// Hide intro and show main content after animation
+			setTimeout(() => {
+				introScreen.classList.add('fade-out');
+				body.style.overflow = '';
+				
+				setTimeout(() => {
+					introScreen.style.display = 'none';
+				}, 800);
+			}, 4000); // Total animation duration: 4 seconds (adjusted for typing)
+		});
+
+		// Set current year
+		document.getElementById('current-year').textContent = new Date().getFullYear();
+
+		// Typed.js initialization
 		$(function () {
 			$("#typed").typed({
-				strings: ["Cloud Architecture.", "Full Stack Engineering.", "DevOps Automation.", "Digital Experiences."],
+				strings: ["scalable web applications.", "cloud-native solutions.", "full-stack systems.", "innovative digital products."],
 				typeSpeed: 50,
 				backDelay: 1500,
 				contentType: "html",
-				loop: true
+				loop: true,
+				showCursor: true,
+				cursorChar: "|"
 			});
 		});
 
 		// Theme Toggle Logic
 		const toggleBtn = document.getElementById('theme-toggle');
 		const html = document.documentElement;
-		const icon = toggleBtn.querySelector('i');
+		const icon = document.getElementById('theme-icon');
 
-		// Check saved theme
-		const savedTheme = localStorage.getItem('theme');
-		if (savedTheme) {
-			html.setAttribute('data-theme', savedTheme);
-			if (savedTheme === 'light') {
-				icon.classList.remove('fa-moon-o');
-				icon.classList.add('fa-sun-o');
+		// Check saved theme or system preference
+		const getPreferredTheme = () => {
+			const saved = localStorage.getItem('theme');
+			if (saved) return saved;
+			return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+		};
+
+		const setTheme = (theme) => {
+			html.setAttribute('data-theme', theme);
+			localStorage.setItem('theme', theme);
+			icon.textContent = theme === 'light' ? '☀️' : '🌙';
+		};
+
+		// Initialize theme
+		setTheme(getPreferredTheme());
+
+		// Listen for system theme changes
+		window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
+			if (!localStorage.getItem('theme')) {
+				setTheme(e.matches ? 'light' : 'dark');
 			}
-		}
+		});
 
 		toggleBtn.addEventListener('click', () => {
 			const currentTheme = html.getAttribute('data-theme');
 			const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-			html.setAttribute('data-theme', newTheme);
-			localStorage.setItem('theme', newTheme);
-
-			// Toggle Icon (assuming FontAwesome usage)
-			// Adjust class names based on exact FA version availability
-			// Simple toggle for now:
-			if (newTheme === 'light') {
-				icon.style.transform = 'rotate(180deg)';
-			} else {
-				icon.style.transform = 'rotate(0deg)';
-			}
+			setTheme(newTheme);
 		});
 
 		// Smooth scrolling for navigation links
 		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 			anchor.addEventListener('click', function (e) {
+				const href = this.getAttribute('href');
+				if (href === '#') return;
+				
 				e.preventDefault();
-				document.querySelector(this.getAttribute('href')).scrollIntoView({
-					behavior: 'smooth'
-				});
+				const target = document.querySelector(href);
+				if (target) {
+					const isMobile = window.innerWidth <= 1024;
+					const contentSidebar = document.querySelector('.content-sidebar');
+					
+					if (isMobile) {
+						// Mobile: scroll window to target
+						const headerOffset = 80;
+						const elementPosition = target.getBoundingClientRect().top;
+						const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+						window.scrollTo({
+							top: offsetPosition,
+							behavior: 'smooth'
+						});
+					} else {
+						// Desktop: check if target is in content sidebar
+						if (contentSidebar && contentSidebar.contains(target)) {
+							const targetPosition = target.getBoundingClientRect().top + contentSidebar.scrollTop - 100;
+							contentSidebar.scrollTo({
+								top: targetPosition,
+								behavior: 'smooth'
+							});
+						} else {
+							// Regular scroll for hero section
+							const headerOffset = 80;
+							const elementPosition = target.getBoundingClientRect().top;
+							const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+							window.scrollTo({
+								top: offsetPosition,
+								behavior: 'smooth'
+							});
+						}
+					}
+				}
+			});
+		});
+
+		// Active navigation tracking
+		const contentSidebar = document.querySelector('.content-sidebar');
+		const sections = document.querySelectorAll('section[id], aside[id]');
+		const navLinks = document.querySelectorAll('.nav-link');
+
+		const updateActiveNav = () => {
+			const isMobile = window.innerWidth <= 1024;
+			const scrollY = window.pageYOffset;
+			const contentScrollTop = contentSidebar ? contentSidebar.scrollTop : 0;
+
+			sections.forEach(section => {
+				const sectionHeight = section.offsetHeight;
+				let sectionTop;
+				let isInSidebar = contentSidebar && contentSidebar.contains(section);
+				
+				if (isMobile) {
+					// Mobile: use window scroll position
+					sectionTop = section.offsetTop - 150;
+				} else if (isInSidebar) {
+					// Desktop: use sidebar scroll position
+					sectionTop = section.offsetTop - 100;
+				} else {
+					sectionTop = section.offsetTop - 100;
+				}
+				
+				const sectionId = section.getAttribute('id');
+				const checkPosition = (isMobile || !isInSidebar) ? scrollY : contentScrollTop;
+
+				if (checkPosition >= sectionTop && checkPosition < sectionTop + sectionHeight) {
+					navLinks.forEach(link => {
+						link.classList.remove('active');
+						if (link.getAttribute('data-section') === sectionId) {
+							link.classList.add('active');
+						}
+					});
+				}
+			});
+		};
+
+		window.addEventListener('scroll', updateActiveNav);
+		if (contentSidebar && window.innerWidth > 1024) {
+			contentSidebar.addEventListener('scroll', updateActiveNav);
+		}
+		updateActiveNav();
+
+		// Intersection Observer for fade-in animations
+		const observerOptions = {
+			threshold: 0.1,
+			rootMargin: '0px 0px -50px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry, index) => {
+				if (entry.isIntersecting) {
+					setTimeout(() => {
+						entry.target.style.opacity = '1';
+						entry.target.style.transform = 'translateY(0)';
+					}, index * 100);
+				}
+			});
+		}, observerOptions);
+
+		// Animate work items and skill groups on scroll
+		document.querySelectorAll('.work-item, .skill-group').forEach((el, index) => {
+			el.style.opacity = '0';
+			el.style.transform = 'translateY(20px)';
+			el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+			observer.observe(el);
+		});
+
+		// Add interactive hover effects
+		document.querySelectorAll('.work-link').forEach(link => {
+			link.addEventListener('mouseenter', function() {
+				this.closest('.work-item').style.transform = 'translateX(8px)';
+			});
+			link.addEventListener('mouseleave', function() {
+				this.closest('.work-item').style.transform = 'translateX(0)';
 			});
 		});
 	</script>
