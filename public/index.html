@@ -26,7 +26,7 @@
 			</div>
 			<div class="intro-text">
 				<h1 class="intro-greeting">
-					<span class="greeting-word">Hi</span>
+					<span class="greeting-word">Hi,</span>
 					<span class="greeting-word">I'm</span>
 					<span class="greeting-name" id="typed-name"></span>
 					<span class="typed-cursor-intro">|</span>
@@ -86,9 +86,26 @@
 									<div>
 										<h3>IT Convergence</h3>
 										<span class="work-role">Senior Consultant</span>
+										<span class="work-location">Dallas, Texas, United States · On-site</span>
 									</div>
 								</div>
-								<span class="work-date">2022 — Present</span>
+								<span class="work-date">Oct 2025 — Present</span>
+							</div>
+						</a>
+					</article>
+
+					<article class="work-item">
+						<a href="https://www.itconvergence.com/" target="_blank" rel="noopener noreferrer" class="work-link">
+							<div class="work-header">
+								<div class="work-company">
+									<img src="img/itc.jpg" alt="IT Convergence" class="work-logo">
+									<div>
+										<h3>IT Convergence</h3>
+										<span class="work-role">Senior Consultant</span>
+										<span class="work-location">Hyderabad, Telangana, India</span>
+									</div>
+								</div>
+								<span class="work-date">Aug 2022 — Sep 2025</span>
 							</div>
 						</a>
 					</article>
@@ -101,9 +118,10 @@
 									<div>
 										<h3>Foyr</h3>
 										<span class="work-role">Full Stack Developer</span>
+										<span class="work-location">Hyderabad, Telangana, India</span>
 									</div>
 								</div>
-								<span class="work-date">2019 — 2022</span>
+								<span class="work-date">Nov 2019 — Aug 2022</span>
 							</div>
 						</a>
 					</article>
@@ -116,9 +134,10 @@
 									<div>
 										<h3>Way2Online</h3>
 										<span class="work-role">Product Engineer</span>
+										<span class="work-location">Hyderabad, Telangana, India</span>
 									</div>
 								</div>
-								<span class="work-date">2017 — 2019</span>
+								<span class="work-date">Dec 2017 — Nov 2019</span>
 							</div>
 						</a>
 					</article>
@@ -226,7 +245,7 @@
 				if (charIndex < name.length) {
 					typedName.textContent += name[charIndex];
 					charIndex++;
-					setTimeout(typeName, 100); // Typing speed: 100ms per character
+					setTimeout(typeName, 50); // Typing speed: 50ms per character
 				} else {
 					// Hide cursor after typing is complete
 					setTimeout(() => {

@@ -673,6 +673,13 @@ a {
   font-weight: 500;
 }
 
+.work-location {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
+
 .work-date {
   font-size: 0.8rem;
   color: var(--text-muted);
